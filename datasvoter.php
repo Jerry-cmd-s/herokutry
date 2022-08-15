@@ -1,8 +1,8 @@
 <?php
-$host ="localhost";
-$username = "root";
-$password ="Jerry20022003#";
-$dbname = "voter";
+$host ="us-cdbr-east-06.cleardb.net";
+$username = "b7c021285b9ee5";
+$password ="15bf16c9";
+$dbname = "heroku_1c3d051f394d960";
 
 
 
@@ -23,8 +23,8 @@ if ($conn->connect_error)
     die("Connection failed:" .$conn->connect_error);
 }
 
-    $sql = "INSERT INTO voters(lastname,firstname,sex,ethnicity,yob,candidates)
-    Values('$lname', '$fname', $sex, $ethnicity, $age, $candidates)";
+    $sql = "INSERT INTO voters(lastname,firstname,sex,ethnicity,age,candidates)
+    Values('$lname', '$fname', '$sex', '$ethnicity', $age, '$candidates')";
 
     $insert=mysqli_query($conn,$sql);
     
