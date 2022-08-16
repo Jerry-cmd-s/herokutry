@@ -35,7 +35,7 @@ if ($conn->connect_error)
     }
     else
 {
-    echo"data succesfully inserted";
+    echo"You voted for a change Congratulation!!";
 }
 
 ?>
