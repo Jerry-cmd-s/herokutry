@@ -274,8 +274,7 @@ ul {
 }
 
 .barStyle {
-
-    border-radius: 9px;
+    s border-radius: 9px;
     font-size: large;
     height: 35px;
     width: 1000px;
@@ -293,7 +292,7 @@ ul {
 
     width: 55%;
     margin-top: 0px;
-    outline: auto;
+
     padding: 2rem;
 
 }
@@ -329,7 +328,7 @@ ul {
     margin-right: px;
     background-color: gray;
     border-style: double;
-    outline: auto;
+
 
 }
 
