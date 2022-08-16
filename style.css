@@ -274,7 +274,7 @@ ul {
 }
 
 .barStyle {
-    s border-radius: 9px;
+    border-radius: 9px;
     font-size: large;
     height: 35px;
     width: 1000px;
