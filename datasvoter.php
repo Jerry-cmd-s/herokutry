@@ -14,9 +14,19 @@ $sex= $_POST['sex'];
 $ethnicity= $_POST['ethnicity'];
 $age= $_POST['age'];
 $candidates= $_POST['candidates'];
+$terms= filter_input(INPUT_POST,"terms,FILTER_VALIDATE_BOOL");
+
+
+//Now i am checking if it has the terms box had been checked
+if (!$terms)
+{
+
+    die("Terms must be accepted");
+}
 
 //Now, I am going to create a connection 
 $conn = new mysqli($host,$username,$password,$dbname);
+
 //Now,I have to check my connection
 if ($conn->connect_error)
 {

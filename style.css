@@ -1,10 +1,26 @@
 * {
     margin: 0;
     padding: 0;
-    width: 100%;
+    max-width: 100%;
 
     box-sizing: border-box;
 
+
+}
+
+h1 {
+    font-family: cursive;
+}
+
+body {
+
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
 
 }
 
@@ -13,15 +29,14 @@
 
 
 
-
 .nav-style {
     background-color: black;
-    height: 90px;
+    height: 80px;
     align-items: center;
     justify-content: space-evenly;
     display: flex;
     font-size: 1.3rem;
-
+    width: 100%;
     top: 0;
     z-index: 999;
     box-shadow: 20px;
@@ -36,9 +51,10 @@
     justify-content: space-between;
     height: 86px;
     z-index: 1;
-    width: 100%;
-    max-width: 6000px;
-    margin: 0 auto;
+    width: 90%;
+
+    outline-color: aliceblue;
+    margin-top: 4px;
     padding: 10px 50px;
     align-items: center;
 
@@ -204,11 +220,13 @@ ul {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 5px 10px;
     height: 100%;
     width: 100px;
+    margin: 0 auto;
+    margin-top: 9.5px;
     border: none;
-    outline: none;
+    outline: auto;
     border-radius: 4px;
     background: rgb(250, 70, 70);
     ;
@@ -232,13 +250,12 @@ ul {
 #navBarLogo {
     position: relative;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2rem;
-    width: 55%;
+    font-size: 1.5rem;
+    width: 50%;
     font-weight: bold;
     background-color: rgb(245, 115, 115);
-    padding: 20px 50px, 40px;
     background-image: linear-gradient(to top, rgb(71, 57, 253), rgb(230, 72, 72));
-    background-size: 100%;
+    padding: 20px 50px, 40px;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -247,8 +264,10 @@ ul {
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-    margin-right: 200px;
-
+    margin-top: 20px;
+    outline: auto;
+    margin: 0 auto -4px 6px;
+    text-align: center;
 }
 
 .navbar_links {
@@ -282,19 +301,10 @@ ul {
 }
 
 .select_design {
-    width: 160px;
-    border-radius: 5px;
+    width: 190px;
+    border-radius: 1px;
     height: 25px;
-    margin-top: px;
-}
-
-.line {
-
-    width: 55%;
-    margin-top: 0px;
-
-    padding: 2rem;
-
+    margin-top: 5px;
 }
 
 .sentencewlcomedesign {
@@ -303,8 +313,23 @@ ul {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    margin-top: 100px;
-    margin-left: 20px;
+    margin-bottom: 20px;
+    outline: auto;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    font-weight: 800;
+    animation: jerry;
+    animation-duration: 8s;
+    animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+}
+
+form {
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    color: black;
 
 }
 
@@ -328,9 +353,9 @@ ul {
     margin-right: px;
     background-color: gray;
     border-style: double;
-
-
 }
+
+
 
 .submitbutton:hover {
 
@@ -340,27 +365,173 @@ ul {
 }
 
 .page_content {
-    width: 60%;
+    width: 1300px;
     height: 50%;
-
-    margin-bottom: 40px;
-    margin-top: 0px;
-    margin-left: 10px;
-
-
-    font-family: cursive;
-    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto auto auto;
 
 
-}
-
-.agreement {
 
     display: flex;
-    margin-right: 30px;
-    outline: auto;
-    width: 80%;
-    height: 10%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 20px;
+    font-weight: bold;
+
 }
 
-.chkbxsize {}
+.line {
+    width: 100%;
+    outline: auto;
+    margin-top: 10px;
+
+    align-items: center;
+    padding: 2rem;
+}
+
+
+.checkbox {
+    box-sizing: border-box;
+    margin: 12px auto 0 65px;
+
+    text-align: center;
+}
+
+.text {
+    width: 55%;
+    margin-left: 85px;
+    margin-top: -23px;
+}
+
+.square {
+
+    width: 8%;
+    margin: 3.5px 360px 0 0;
+
+}
+
+.vote_nav {
+    height: 45px;
+    background-color: rgb(26, 24, 24);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.votenavcontents {
+    justify-content: center;
+    display: flex;
+    padding-left: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    justify-content: space-evenly;
+
+    box-sizing: border-box;
+
+    justify-content: center;
+
+}
+
+.burger {}
+
+.burger div {
+    height: 2px;
+    width: 27px;
+    background-color: aliceblue;
+    margin: 5px;
+}
+
+.linkvote {
+    width: 100%;
+    justify-content: space-evenly;
+    text-decoration: solid;
+    font-weight: 40px;
+    display: flex;
+}
+
+.linkdesign {
+    font-weight: bold;
+    display: flex;
+    height: 100%;
+    color: rgb(79, 120, 152);
+    justify-content: space-between;
+
+
+}
+
+.linkdesign:hover {
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.footer {
+
+    height: 100px;
+    color: black;
+    background-color: gray;
+    margin-top: 500px;
+
+}
+
+.bodypage {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.mapdesign {
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.publicity {
+    height: 250px;
+    background-color: black;
+    margin: 50px auto;
+    width: 1300px;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+    text-align: center;
+}
+
+
+@media screen and (max-width:600px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+
+        box-sizing: border-box;
+
+
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        margin: 0;
+        padding: 0;
+    }
+
+    .linkdesign {
+        position: absolute;
+        height: 92vh;
+        top: 10vh;
+        background-color: blue;
+        justify-content: space-between;
+        display: none;
+
+    }
+}
