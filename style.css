@@ -527,4 +527,12 @@ span {
 
 
     }
+
+    form {
+        text-align: center;
+        width: 618.5px;
+        font-weight: bold;
+        color: black;
+
+    }
 }
