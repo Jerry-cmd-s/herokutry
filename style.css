@@ -267,9 +267,9 @@ ul {
 }
 
 .select_design {
-    width: 190px;
+    width: 200px;
     border-radius: 1px;
-    height: 25px;
+    height: 30px;
     margin-top: 5px;
 }
 
@@ -475,24 +475,6 @@ span {
     text-align: center;
 
 }
-
-.firstvote {}
-
-.second_vote {}
-
-.third_vote {}
-
-.fourth_vote {}
-
-.fifth_vote {}
-
-.sith_vote {}
-
-.seventh_vote {}
-
-.eighth_vote {}
-
-
 
 @media screen and (max-width:667px) {
 
