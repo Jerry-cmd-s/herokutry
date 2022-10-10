@@ -1,10 +1,16 @@
 
 function changeColor(x) {
-    if (x < 5) {
+
+
+
+
+
+    if (x % 2 == 0) {
+        3
         document.querySelector('#firstvote1').style.color = "green";
     }
 
-    else if (x == 6) {
+    else if (x % 2 !== 0) {
         document.querySelector('#firstvote1').style.color = "red";
     }
 }
@@ -15,17 +21,18 @@ let htmlString = "";
 
 for (let i = 0; i < 10; i++) {
 
+    changeColor(i)
+    //if (i % 2 == 0) {
 
-    if (i % 2 == 0) {
-        changeColor(i);
-        htmlString += '<span>Vote For a change </span>';
 
-    }
+    htmlString += '<span>Vote For a change </span>';
 
-    else if (i % 2 !== 0) {
+    //}
 
-        htmlString += '<span>You doing the right thing </span>';
-    }
+    // else if (i % 2 !== 0) {
+
+    //     htmlString += '<span>You doing the right thing </span>';
+    // }
 
 }
 span.innerHTML = htmlString;
