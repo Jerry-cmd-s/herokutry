@@ -41,32 +41,37 @@
 
         <div class="line">
 
-            <div class="sentencewlcomedesign">
 
-                Online Voting Form
-
-            </div>
-            <form class="formdesign" action="datasvoter.php" method="post">
+            <form action="datasvoter.php" method="post">
 
 
+                <div class="sentencewlcomedesign">
+
+                    Online Voting Form
+
+                </div>
 
 
 
-                <label placeholder="First Name" for="fname">First Name:</label>
-                <input class="select_design" type="text" id="fname" name="fname"><br><br>
-                <label for="fname">Last Name:</label>
-                <input class="select_design" type="text" id="lname" name="lname"><br><br>
+                <input placeholder="First Name" class="select_design" type="text" id="fname" name="fname"><br><br>
 
-                <p>Select your sex:</p>
+                <input placeholder="Last Name" class="select_design" type="text" id="lname" name="lname"><br><br>
+
+
                 <select class="select_design" name="sex" id="sex">n
+                    <option value="" disabled selected> Select your sex</option>>
+
                     <option value="M">Male</option>
                     <option value="F">Female</option>
 
                 </select>
 
-                <p>Select your ethnicity:</p>
+                <p></p>
+
 
                 <select class="select_design   name=" ethnicity" id="eth">
+                    <option value="" disabled selected> Select your ethnicity</option>>
+
                     <option value="White">White</option>
                     <option value="Black">Black</option>
                     <option value="Spanish">Spanish</option>
@@ -74,10 +79,10 @@
                 </select>
 
 
-                <p>Select year of birth:</p>
+                <p></p>
                 <select class="select_design" name="age" id="Age">
+                    <option value="" disabled selected>Select age</option>>
 
-                    <option>year</option>
                     <option value="1900">1900</option>
                     <option value="1901">1901</option>
                     <option value="1902">1902</option>
@@ -204,8 +209,9 @@
 
                 </select>
 
-                <p> Choose your candidate</p>
+                <p> </p>
                 <select class="select_design" name="candidates" id="eth">
+                    <option value="" disabled selected>Select candidate</option>>
                     <option value="Trump">Trump</option>
                     <option value="Obama">Obama</option>
                     <option value="Bush">Bush</option>
@@ -241,7 +247,7 @@
 
 
         <span id="firstvote1" class="firstvote">
-            Vote for a change, </span>
+        </span>
 
 
 
