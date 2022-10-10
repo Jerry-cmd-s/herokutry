@@ -465,11 +465,11 @@ form {
 }
 
 span {
-    padding: 4px;
+    padding: 0px;
 
-    transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -webkit-transform: rotate(3600deg);
+    transform: rotate(170deg);
+    -ms-transform: rotate(170deg);
+    -webkit-transform: rotate(170deg);
     display: inline-block;
 }
 
@@ -499,7 +499,7 @@ span {
     body {
         margin: 0;
         padding: 0;
-        width: 667px;
+        width: 700px;
     }
 
     header {
@@ -539,9 +539,19 @@ span {
 
     form {
         text-align: center;
-        width: 618.5px;
+        width: 100%;
         font-weight: bold;
         color: black;
+        border: none;
+        padding: 0;
+    }
+
+    .select_design {
+        width: 300px;
+        border-radius: 1px;
+        height: 40px;
+        margin-top: 5px;
+        padding-left: 4px;
 
     }
 }
