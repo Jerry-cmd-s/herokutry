@@ -418,11 +418,13 @@ form {
 
 }
 
-.burger {}
+.burger {
+    display: none;
+}
 
 .burger div {
     height: 2px;
-    width: 27px;
+    width: 35px;
     background-color: aliceblue;
     margin: 5px;
 }
@@ -433,6 +435,7 @@ form {
     text-decoration: solid;
     font-weight: 40px;
     display: flex;
+    height: 40px;
 }
 
 .linkdesign {
@@ -441,9 +444,11 @@ form {
     height: 100%;
     color: rgb(79, 120, 152);
     justify-content: space-between;
-
+    margin-top: 7px;
 
 }
+
+
 
 .linkdesign:hover {
     color: white;
@@ -465,16 +470,17 @@ form {
 }
 
 span {
-    padding: 0px;
+    margin-top: 5px;
+    padding: 3px;
 
-    transform: rotate(170deg);
-    -ms-transform: rotate(170deg);
-    -webkit-transform: rotate(170deg);
+    transform: rotate(178deg);
+    -ms-transform: rotate(178deg);
+    -webkit-transform: rotate(178deg);
     display: inline-block;
 }
 
 .publicity {
-    height: 250px;
+    height: 400px;
     background-color: whitesmoke;
     margin: 50px auto;
     width: 1300px;
@@ -482,40 +488,102 @@ span {
     align-items: center;
     color: black;
     text-align: center;
+    background-image: url(giphy.gif);
+    border-image-slice: 50px;
 
 }
 
-@media screen and (max-width:667px) {
+
+
+@media screen and (max-width:375px) {
 
     * {
         margin: 0;
         padding: 0;
 
-        max-width: 667px;
+        max-width: 375px;
         box-sizing: border-box;
+        overflow-x: hidden;
 
+        /* hide the extra width on the page as i set max-width */
     }
 
     body {
         margin: 0;
         padding: 0;
-        width: 667px;
+        max-width: 375px;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        /* hide the extra width on the page as i set max-width */
     }
+
+    .vote_nav {
+        height: 40px;
+        background-color: rgb(26, 24, 24);
+        width: 375px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .votenavcontents {
+        justify-content: center;
+        max-width: 375px;
+        align-items: center;
+        height: 1480px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        margin: 35px auto;
+
+        position: absolute;
+        transform: translateX(100%);
+        z-index: 1;
+        padding: 0px;
+    }
+
 
     header {
         margin: 0;
         padding: 0;
+        max-width: 375px;
+
     }
 
+    /**/
     .linkdesign {
-        position: absolute;
-        height: 92vh;
-        top: 10vh;
-        background-color: blue;
+        font-weight: bold;
+        display: flex;
+        height: 100%;
+        color: rgb(79, 120, 152);
         justify-content: space-between;
-        display: none;
+        margin-bottom: 100px;
+        position: relative;
+
 
     }
+
+
+    .linkvote {
+        width: 100%;
+        justify-content: space-evenly;
+        text-decoration: solid;
+        font-weight: 20px;
+        height: 50px;
+        position: relative;
+        font-size: larger;
+        z-index: 1;
+        padding-bottom: 25px;
+        margin-bottom: 230px;
+
+    }
+
+    /**/
+
+
+
+
 
     h4 {
         width: 75%;
@@ -523,7 +591,7 @@ span {
     }
 
     .text {
-        width: 100%;
+        width: 50%;
         margin-left: 92px;
         margin-top: -23px;
 
@@ -540,7 +608,6 @@ span {
     form {
         text-align: center;
         width: 100%;
-
         font-weight: bold;
         color: black;
         border: none;
@@ -548,11 +615,19 @@ span {
     }
 
     .select_design {
-        width: 400px;
+        width: 360px;
         border-radius: 1px;
         height: 47px;
         margin-top: 5px;
         padding-left: 4px;
 
+    }
+
+    .nav-activ {
+        transform: translateX(0%);
+    }
+
+    .burger {
+        display: block;
     }
 }
