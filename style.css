@@ -514,6 +514,7 @@ span {
         max-width: 375px;
         box-sizing: border-box;
         overflow-x: hidden;
+        position: fixed;
         /* hide the extra width on the page as i set max-width */
     }
 
@@ -524,7 +525,7 @@ span {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        position: relative;
     }
 
     .votenavcontents {
@@ -537,8 +538,8 @@ span {
         flex-direction: column;
         margin: 35px auto;
 
-        position: absolute;
-        transform: translateX(100%);
+        position: relative;
+
         z-index: 1;
         padding: 0px;
     }
@@ -548,7 +549,8 @@ span {
         margin: 0;
         padding: 0;
         max-width: 375px;
-
+        position: relative;
+        display: flex;
     }
 
     /**/
@@ -582,7 +584,9 @@ span {
     /**/
 
 
-
+    .container {
+        position: relative;
+    }
 
 
     h4 {
