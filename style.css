@@ -342,7 +342,6 @@ ul {
     width: 100%;
     background-color: white;
     border: 20px;
-
     border-top-left-radius: 1px;
     border-top-right-radius: 1px;
     border-bottom-right-radius: 1px;
@@ -455,14 +454,7 @@ form {
     transition: all 0.5s ease;
 }
 
-.footer {
 
-    height: 100px;
-    color: black;
-    background-color: midnightblue;
-    margin-top: 500px;
-
-}
 
 .bodypage {
     margin-top: 100px;
@@ -495,144 +487,28 @@ span {
 
 
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:768px) {
+
 
     * {
+        max-width: 100%;
+
+        box-sizing: border-box;
         margin: 0;
         padding: 0;
 
-        max-width: 375px;
-        box-sizing: border-box;
-        overflow-x: hidden;
-
-        /* hide the extra width on the page as i set max-width */
     }
 
     body {
-        margin: 0;
-        padding: 0;
-        max-width: 375px;
-        box-sizing: border-box;
-        overflow-x: hidden;
-
-        /* hide the extra width on the page as i set max-width */
-    }
-
-    .vote_nav {
-        height: 40px;
-        background-color: rgb(26, 24, 24);
-        width: 375px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-    }
-
-    .votenavcontents {
-        justify-content: center;
-        max-width: 375px;
-        align-items: center;
-        height: 1480px;
-        background-color: black;
-        display: flex;
-        flex-direction: column;
-        margin: 35px auto;
-        transform: translateX(100%);
-        position: relative;
-
-        z-index: 1;
-        padding: 0px;
-    }
-
-
-    header {
-        margin: 0;
-        padding: 0;
-        max-width: 375px;
-        position: relative;
-        display: flex;
-    }
-
-    /**/
-    .linkdesign {
-        font-weight: bold;
-        display: flex;
-        height: 100%;
-        color: rgb(79, 120, 152);
-        justify-content: space-between;
-        margin-bottom: 100px;
-        position: relative;
-
-
-    }
-
-
-    .linkvote {
         width: 100%;
-        justify-content: space-evenly;
-        text-decoration: solid;
-        font-weight: 20px;
-        height: 50px;
-        position: relative;
-        font-size: larger;
-        z-index: 1;
-        padding-bottom: 25px;
-        margin-bottom: 230px;
-
-    }
-
-    /**/
-
-
-    .container {
-        position: relative;
-    }
-
-
-    h4 {
-        width: 75%;
-        margin-left: 70px;
-    }
-
-    .text {
-        width: 50%;
-        margin-left: 92px;
-        margin-top: -23px;
-
-    }
-
-    .square {
-
-        width: 8%;
-        margin: 3.5px 365px 0 0;
-
-
+        box-sizing: border-box;
     }
 
     form {
-        text-align: center;
-        width: 100%;
-        font-weight: bold;
-        color: black;
-        border: none;
-        padding: 0;
+        width: 80%;
     }
 
-    .select_design {
-        width: 360px;
-        border-radius: 1px;
-        height: 47px;
-        margin-top: 5px;
-        padding-left: 4px;
 
-    }
 
-    .nav-activ {
-        transform: translateX(0%);
 
-    }
-
-    .burger {
-        display: block;
-    }
 }
