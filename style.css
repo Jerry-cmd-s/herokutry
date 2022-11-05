@@ -232,30 +232,17 @@ form {
     * {
         margin: 0;
         padding: 0;
-        overflow-x: hidden;
+
         box-sizing: border-box;
-
-
-
-    }
-
-
-
-    body {}
-
-    .container {
-        overflow-x: hidden;
-        position: relative;
-    }
-
-    nav {
         overflow-x: hidden;
     }
 
-    .vote_nav {
-        overflow-x: hidden;
 
-    }
+
+
+
+
+
 
     .page_content {
         width: 100%;
@@ -331,5 +318,8 @@ form {
 
     .nav-activ {
         transform: translateX(0%);
+        z-index: 1;
+        overflow-x: hidden;
+
     }
 }
