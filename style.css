@@ -239,7 +239,16 @@ form {
 
 
 
+    body {
+        position: relative;
+        overflow-x: hidden;
+    }
 
+
+    header {
+        overflow-x: hidden;
+
+    }
 
 
 
