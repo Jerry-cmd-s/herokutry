@@ -232,7 +232,6 @@ form {
     * {
         margin: 0;
         padding: 0;
-
         box-sizing: border-box;
         overflow-x: hidden;
     }
@@ -242,6 +241,7 @@ form {
     body {
         position: relative;
         overflow-x: hidden;
+        height: 100%;
     }
 
 
