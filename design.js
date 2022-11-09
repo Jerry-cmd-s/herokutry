@@ -1,4 +1,11 @@
 //creating an anonymous functon dont know why 
+
+
+
+
+
+
+
 const navslide = () => {
 
     const burger = document.querySelector('.burger');
@@ -9,3 +16,27 @@ const navslide = () => {
     });
 }
 navslide();
+
+
+
+var year = 0;
+var till = 150;
+var options = "";
+var test = "";
+
+
+for (var y = year; y <= till; y++) {
+
+
+
+    // {  ;}
+    if (y == 0) {
+        options += "<option  disabled selected >" + 'Select Age' + "</option>"
+    }
+
+    options += "<option  >" + y + "</option>";
+
+
+}
+
+document.getElementById("Age").innerHTML = options;
