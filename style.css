@@ -204,7 +204,7 @@ form {
     font-weight: bold;
     display: flex;
     height: 100%;
-    color: black;
+    color: whitesmoke;
     justify-content: space-between;
     margin-top: 7px;
 
@@ -216,8 +216,6 @@ form {
     color: goldenrod;
     transition: all 0.5s ease;
 }
-
-
 
 
 

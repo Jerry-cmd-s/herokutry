@@ -19,11 +19,18 @@ navslide();
 
 
 
+
+
+
+
+
+
+
 var year = 0;
 var till = 150;
 var options = "";
-var test = "";
 
+var age_alert = "";
 
 for (var y = year; y <= till; y++) {
 
@@ -39,4 +46,9 @@ for (var y = year; y <= till; y++) {
 
 }
 
+
 document.getElementById("Age").innerHTML = options;
+
+
+
+
