@@ -1,8 +1,8 @@
 <?php
-$host ="db.ddldydwnklsjxhaoicow.supabase.co";
-$username = "postgres";
-$password ="zgpYhcTdLbessOqa";
-$dbname = "postgres";
+$host ="votingdatabase.coispubgurww.us-east-1.rds.amazonaws.com";
+$username = "admin";
+$password ="Pauljina20022003#";
+$dbname = "votingdatabase";
 
 
 
