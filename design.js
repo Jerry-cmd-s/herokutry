@@ -46,24 +46,24 @@ navslide();
 
 
 
-var year = 0;
-var till = 150;
-var options = "";
+//var year = 0;
+//var till = 150;
+//var options = "";
 
 
-for (var y = year; y <= till; y++) {
+//for (var y = year; y <= till; y++) {
 
 
-    if (y == 0) {
-        options += "<option  disabled selected >" + 'Select Age' + "</option>"
-    }
+// if (y == 0) {
+//    options += "<option  disabled selected >" + 'Select Age' + "</option>"
+// }
 
-    options += "<option  >" + y + "</option>";
+///  options += "<option  >" + y + "</option>";
 
-}
+//}
 
 
-document.getElementById("Age").innerHTML = options;
+//document.getElementById("Age").innerHTML = options;
 stateOption();
 
 
