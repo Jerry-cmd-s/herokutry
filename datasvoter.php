@@ -1,5 +1,5 @@
 <?php
-$host ="votingdatabase.coispubgurww.us-east-1.rds.amazonaws.com";
+$servername ="votingdatabase.coispubgurww.us-east-1.rds.amazonaws.com";
 $username = "admin";
 $password ="Dsafdfwr3r3e3e3edds2#";
 $dbname = "votingdatas";
@@ -14,7 +14,7 @@ $dbname = "votingdatas";
 
 
 //Now, I am going to create a connection 
-$conn = new mysqli($host,$username,$password,$dbname);
+$conn = new mysqli($servername,$username,$password,$dbname);
 
 
 
