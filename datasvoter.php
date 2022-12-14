@@ -1,8 +1,8 @@
 <?php
        $servername ="votingdatabase.coispubgurww.us-east-1.rds.amazonaws.com";
-       $username = "votingdatabase";
+       $username = "admin";
        $password ="Dsafdfwr3r3e3e3edds2#";
-       $dbname = "votingdatas";
+       $dbname = "votingdatabase";
        
        
        
