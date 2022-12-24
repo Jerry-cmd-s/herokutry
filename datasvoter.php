@@ -1,6 +1,6 @@
 <?php
 $servername ="votingdatabase.coispubgurww.us-east-1.rds.amazonaws.com";
- $port=3306;
+
 $username = "myvotingdatabse";
 $password ="Dsafdfwr3r3e3e3edds2#";
 $dbname = "votingdatas";
@@ -9,7 +9,7 @@ $dbname = "votingdatas";
 //
 //Now i am checking if it has the terms box had been checked
 //Now, I am going to create a connection 
-$conn = new mysqli($servername,$username,$password,$dbname,$port);
+$conn = new mysqli($servername,$username,$password,$dbname);
 //Now,I have to check my connection
 if (!$conn)
 {
