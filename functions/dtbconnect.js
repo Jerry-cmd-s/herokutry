@@ -1,3 +1,6 @@
+
+const formdata = new FormData(document.getElementById('form'))
+
 const mysql = require('msql')
 
 
