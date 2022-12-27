@@ -23,7 +23,7 @@ exports.handler = async (event, context) => {
 
     });
     connection.connect(function (err) {
-        if (err) throw err;
+        if (err);
         console.log('CONNECTED');
     });
 
