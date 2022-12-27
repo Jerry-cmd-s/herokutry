@@ -24,8 +24,7 @@ exports.handler = async (event, context) => {
     });
     connection.connect(function (err) {
         if (err) throw err;
-        else
-            console.log('CONNECTED');
+        console.log('CONNECTED');
     });
 
 
