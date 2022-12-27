@@ -151,7 +151,7 @@ form {
 
 .vote_nav {
     height: 45px;
-    background-color: rgba(240, 242, 245, 1);
+    background-color: black;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -204,7 +204,7 @@ form {
     font-weight: bold;
     display: flex;
     height: 100%;
-    color: black;
+    color: white;
     justify-content: space-between;
     margin-top: 7px;
 
