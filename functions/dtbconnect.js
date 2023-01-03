@@ -7,7 +7,7 @@ const mysql = require('msql')
 exports.handler = async (event, context) => {
     const connection = mysql.createconnection({
         host: "myvotingdatabse.coispubgurww.us-east-1.rds.amazonaws.com",
-        username: "admin",
+        username: "jerrycamidb",
         password: "Dsafdfwr3r3e3e3edds2#",
         dbname: "myvotingdatabse"
 
