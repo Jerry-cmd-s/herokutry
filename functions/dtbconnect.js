@@ -19,7 +19,7 @@ exports.handler = async (event, context) => {
         host: "myvotingdatabse.coispubgurww.us-east-1.rds.amazonaws.com",
         username: "admin",
         password: "Dsafdfwr3r3e3e3edds2#",
-        dbname: "votingdatas"
+        dbname: "myvotingdatabse"
 
     });
     connection.connect(function (err) {
