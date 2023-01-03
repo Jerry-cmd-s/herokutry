@@ -1,14 +1,4 @@
 
-const formdata = new FormData(document.getElementById('form'));
-fetch('/form-handler', {
-
-    method: 'POST',
-    body: formdata
-}).then(response => {
-
-}).catch(error => {
-
-});
 
 const mysql = require('msql')
 
