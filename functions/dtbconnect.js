@@ -1,6 +1,6 @@
 
 
-const mysql = require('msql');
+const mysql = require('msql2');
 
 
 
