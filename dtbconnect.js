@@ -1,5 +1,3 @@
-
-
 const mysql = require('msql2');
 
 
