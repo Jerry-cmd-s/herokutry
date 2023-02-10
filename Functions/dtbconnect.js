@@ -2,7 +2,7 @@ const mysql = require('msql2');
 
 
 
-exports.handler = async (event, context) => {
+exports.handler = function (event, context, callback) {
     const connection = mysql.createconnection({
         host: "myvotingdatabse.coispubgurww.us-east-1.rds.amazonaws.com",
         username: "admin",
