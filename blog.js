@@ -6,6 +6,7 @@ const displaytextarea = () => {
 
     button.addEventListener('click', () => {
         textbox.style.display = 'block';
+
     });
 
 
