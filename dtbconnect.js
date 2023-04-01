@@ -1,32 +1,29 @@
-const mysql = require('mysql2');
-const express = require('express');
-const bodyparser = require('body-parser');
-
+const http = require('http')
+const express = require('express')
+//create an instance of express 
+const port = 8080;
 const app = express();
-app.use(bodyparser.json());
-
-//exports.handler = function (event, context, callback) {
-const connection = mysql.createConnection({
-    host: "127.0.0.1",
-    username: "root",
-    password: "",
-    dbname: "votinginfos"
-});
 
 
-//};
-//Submission of the form
-//const form = document.getElementById('form');
-//form.addEventListener('submit', function (event) {
-// event.preventDefault();
+
+
+//API MIDDLEWARE
+
+app.use(express.json())
+app.use(express.urlencoded())
+app.use(express.static('public'))
+
+
+//API ROUTES
+
+app.get('/', (req, res) => {
+
+    res.status(200).send('<h1> Hellooooo sir</h1>')
+})
 
 app.post('/form', (req, res) => {
-    const email = req.body.email;
-    const age = req.body.age;
-    const ethnicity = req.body.eth;
-    const sex = req.body.sex;
-    const party = req.body.party;
-    const state = req.body.st;
+    const formdata = req.body
+})
 
 
 
@@ -34,18 +31,10 @@ app.post('/form', (req, res) => {
 
 
 
-    const sql = `INSERT INTO votersdata (email, age,ethnicity,sex,party,state ) VALUES ('${email}', '${age}', '${ethnicity},'${sex}','${party}','${state}')`;
+
+app.listen(port, () => {
+    console.log(`Server running on port ${port}`);
+})
 
 
-    connection.query(sql, (error, results, fields) => {
-        if (error) {
-            return res.status(500).json({ error });
-        }
 
-        return res.json({ success: true });
-    });
-});
-
-app.listen(3000, () => {
-    console.log('Server running on http://localhost:3000');
-});

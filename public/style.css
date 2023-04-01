@@ -39,7 +39,7 @@ ul {
     align-items: center;
     text-decoration: none;
     padding: 5px 10px;
-    height: 100%;
+    height: 5%;
     width: 100px;
     margin: 0 auto;
     margin-top: 9.5px;
@@ -62,10 +62,10 @@ ul {
 
 
 .select_design {
-    width: 225px;
-    border-radius: 1px;
-    height: 32px;
-    margin-top: 5px;
+    width: 250px;
+    border-radius: 4px;
+    height: 35px;
+    margin-top: 20px;
     padding-left: 4px;
 
 }
@@ -82,7 +82,7 @@ ul {
     text-align: center;
     font-weight: bold;
     font-size: x-large;
-    font-weight: 800;
+    font-weight: 10px;
 
     animation-duration: 8s;
     animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
@@ -93,15 +93,18 @@ ul {
 
 .page_content {
     width: 100%;
-    height: 50%;
+    height: 700px;
     justify-content: center;
     align-items: center;
-    margin: 40px auto auto auto;
-    padding: 0;
+    margin: 0px 23px auto auto;
+
+    padding: 0px;
     display: flex;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding-bottom: 20px;
     font-weight: bold;
+    float: right;
+    border-radius: 9px;
 
 }
 
@@ -120,8 +123,8 @@ ul {
 
 form {
     text-align: center;
-    width: 50%;
-    background-color: white;
+    width: 30%;
+    background-color: rgb(223, 176, 176);
     font-weight: bold;
     color: black;
     padding-top: 1rem;
@@ -151,7 +154,8 @@ form {
 
 .vote_nav {
     height: 45px;
-    background-color: black;
+    background-color: rgba(123, 94, 156, 0.511);
+    ;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -176,6 +180,14 @@ form {
     box-sizing: border-box;
 
     justify-content: center;
+
+}
+
+.containers {
+    display: flex;
+    margin-top: 800px;
+    width: 100%;
+    background-color: cornflowerblue;
 
 }
 
@@ -213,20 +225,32 @@ form {
 
 
 .linkdesign:hover {
-    color: goldenrod;
+    color: rgb(98, 78, 26);
     transition: all 0.5s ease;
 }
 
 .select {
-    width: 210px;
+    width: 20px;
     height: 20px;
 }
 
 
 
 
+footer {
+
+    margin-top: auto;
+    display: flex;
+}
+
+.linkfooter {
+    color: gray;
+    width: 20%;
+    margin-right: 0;
 
 
+    list-style-type: square;
+}
 
 @media screen and (max-width:820px) {
 
