@@ -123,7 +123,7 @@ ul {
 
 form {
     text-align: center;
-    width: 30%;
+    width: 40%;
     background-color: rgb(223, 176, 176);
     font-weight: bold;
     color: black;
@@ -133,7 +133,7 @@ form {
     padding-right: 0;
     height: 100%;
     margin: 0 auto;
-    border: 1.7px solid rgba(var(--b6a, 219, 219, 219), 1);
+    border: 0.2px solid rgba(var(--b6a, 2, 2, 2), 1);
     border-radius: 7px;
 }
 
