@@ -7,7 +7,35 @@
     <html lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src=" src=" https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script> </script>
+
+
+
+
+
+
+
+    </script>
+
 </head>
+<script>
+    var map;
+    var service;
+    var infowindow;
+    function ini() {
+        var pyrmont = new google.maps.LatLng(-33.8665433, 151.1956316);
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: pyrmont,
+            zoom: 15
+        })
+    }
+
+    google.map.events.addDomListener(window, 'load', ini)
+
+
+
+</script>
 
 <header>
     <nav class="vote_nav">
@@ -46,7 +74,7 @@
         <div class="line">
 
 
-            <form style="   background-color: rgb(250, 250, 254); height: 600px; " id="form" action="/form"
+            <form style="  background-color:  rgba(2, 2, 0, 0.015); height: 610px; " id="form" action="/form"
                 method="post">
 
 
@@ -136,31 +164,52 @@
 
     </div>
 
-    <div style="height: 1100px;"> </div>
-    <hr>
-    <span style="margin-left: 70px;height: 50%;">
-
-        <h4 style="margin-left: 60px;">
-            <ul style="list-style-type: circle;">
-                <li class="linkfooter"><a class="linkfooter" href="/">Voting</a></li>
-                <li class="linkfooter"><a class="linkfooter" href="/">Website Creator</a></li>
-                <li class="linkfooter"><a class="linkfooter" href="/">USA</a></li>
-                <li class="linkfooter"><a class="linkfooter" href="/">VOTING CENTER</a></li>
-            </ul>
+    <input id="searchTextField" type="text" size="50">
+    <div id="map" style="height: 500px;">
 
 
-        </h4>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCeiKzISzDN80MEsDEpHacEMPhsWZZVRqg&callback=initMap&v=weekly"
+            defer>
+            </script>
 
 
 
-    </span>
 
-    <script src="design.js">
 
-    </script>
-    <script src="dtbconnect.js">
 
-    </script>
+
+
+
+
+
+        <div style="height: 1100px;"> </div>
+        <hr>
+        <span style="margin-left: 70px;height: 50%;">
+
+            <h4 style="margin-left: 60px;">
+                <ul style="list-style-type: circle;">
+                    <li class="linkfooter"><a class="linkfooter" href="/">Voting</a></li>
+                    <li class="linkfooter"><a class="linkfooter" href="/">Website Creator</a></li>
+                    <li class="linkfooter"><a class="linkfooter" href="/">USA</a></li>
+                    <li class="linkfooter"><a class="linkfooter" href="/">VOTING CENTER</a></li>
+                </ul>
+
+
+            </h4>
+
+
+
+        </span>
+
+        <script src="design.js">
+
+        </script>
+        <script src="dtbconnect.js">
+
+
+        </script>
+        <script src="map.js"></script>
 </body>
 
 </html>
