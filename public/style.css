@@ -442,4 +442,47 @@ footer {
         overflow-x: hidden;
 
     }
+
+
+
+    .bigtextdays {
+        font-size: 2rem;
+        margin: 0 2rem;
+        justify-content: center;
+        justify-items: center;
+        color: rgb(126, 126, 129);
+        ;
+    }
+
+
+
+    .bigtextmins {
+        font-size: 2rem;
+        margin: 0 2rem;
+        justify-content: center;
+        justify-items: center;
+        color: rgb(126, 126, 129);
+        ;
+    }
+
+    .bigtextsecond {
+        font-size: 2rem;
+        margin: 0 2rem;
+        justify-content: center;
+        justify-items: center;
+        color: rgb(126, 126, 129);
+    }
+
+    .bigtexthours {
+        font-size: 2rem;
+        margin: 0 2rem;
+        justify-content: center;
+        justify-items: center;
+        color: rgb(126, 126, 129);
+    }
+
+    #map {
+        width: 200px;
+    }
+
 }
