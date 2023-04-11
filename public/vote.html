@@ -3,12 +3,10 @@
 <html lang="en">
 
 <head>
-    <!DOCTYPE html>
+
     <html lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src=" src=" https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script> </script>
 
 
 
@@ -16,26 +14,10 @@
 
 
 
-    </script>
+
 
 </head>
-<script>
-    var map;
-    var service;
-    var infowindow;
-    function ini() {
-        var pyrmont = new google.maps.LatLng(-33.8665433, 151.1956316);
-        map = new google.maps.Map(document.getElementById('map'), {
-            center: pyrmont,
-            zoom: 15
-        })
-    }
 
-    google.map.events.addDomListener(window, 'load', ini)
-
-
-
-</script>
 
 <header>
     <nav class="vote_nav">
@@ -47,7 +29,7 @@
 
                 <li class="linkvote"><a href="\" class="linkdesign">Contact</a></li>
 
-                <li class="linkvote"><a href="try01.html" class="linkdesign">Candidates</a></li>
+                <li class="linkvote"><a href="try01.html" class="linkdesign">Stats/Graphing</a></li>
 
                 <li class="linkvote"><a href="subscribetoblog.html" class="linkdesign">Blog</a></li>
 
@@ -66,6 +48,28 @@
 
 <body>
 
+    <div class="titlectd">
+        <span>
+            <h2> Presidential Elections Date</h2>
+        </span>
+    </div>
+    <div class="countdown">
+        <div class="days">
+            <p id="daysdis" class="bigtextdays">0</p> <span class="dhms">Days</span>
+        </div>
+        <div class="hours">
+            <p id="hoursdis" class="bigtexthours">0</p> <span class="dhms">Hours</span>
+        </div>
+        <div class="mins">
+            <p id="minsdis" class="bigtextmins">0</p> <span class="dhms">Minutes</span>
+        </div>
+        <div class="seconds">
+            <p id="secondsdis" class="bigtextsecond">0</p> <span class="dhms"> Seconds</span>
+        </div>
+
+
+
+    </div>
 
     <div class="page_content">
 
@@ -76,6 +80,7 @@
 
             <form style="  background-color:  rgba(2, 2, 0, 0.015); height: 610px; " id="form" action="/form"
                 method="post">
+
 
 
                 <div class="sentencewlcomedesign">
@@ -164,12 +169,12 @@
 
     </div>
 
-    <input id="searchTextField" type="text" size="50">
-    <div id="map" style="height: 500px;">
+    <input placeholder="Search your district..." class="mapsearchentry" id="pac-input" type="text" size="50">
+    <div id="map" style=" width: 1500px; height: 600px; margin: 0 auto;">
 
 
         <script
-            src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCeiKzISzDN80MEsDEpHacEMPhsWZZVRqg&callback=initMap&v=weekly"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeiKzISzDN80MEsDEpHacEMPhsWZZVRqg&libraries=places"
             defer>
             </script>
 
@@ -198,17 +203,11 @@
 
             </h4>
 
-
-
         </span>
+        <script src="ctd.js"></script>
+        <script src="design.js"> </script>
 
-        <script src="design.js">
-
-        </script>
-        <script src="dtbconnect.js">
-
-
-        </script>
+        <script src="dtbconnect.js"></script>
         <script src="map.js"></script>
 </body>
 
