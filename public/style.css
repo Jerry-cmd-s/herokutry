@@ -126,6 +126,7 @@ h2 {
     display: flex;
     justify-content: center;
     margin: auto 0;
+
 }
 
 .titlectd {
@@ -177,7 +178,7 @@ h2 {
 .mapsearchentry {
     justify-content: center;
     border-radius: 8px;
-    margin-left: 630px;
+
     margin-top: 40px;
     height: 40px;
     width: 600px;
@@ -188,7 +189,7 @@ h2 {
 
 .line {
     width: 100%;
-    background-color: white;
+
     border: 20px;
     border-top-left-radius: 1px;
     border-top-right-radius: 1px;
@@ -196,6 +197,7 @@ h2 {
     border-bottom-left-radius: 1px;
     align-items: center;
     padding: 0rem;
+
 
 }
 
@@ -229,12 +231,11 @@ form {
 
 }
 
-.square {}
 
 .vote_nav {
     height: 45px;
     background-color: rgba(2, 2, 0, 0.055);
-    ;
+
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -295,7 +296,7 @@ form {
     font-weight: bold;
     display: flex;
     height: 100%;
-    color: rgb(48, 45, 45);
+    color: rgb(34, 54, 172);
     justify-content: space-between;
     margin-top: 7px;
 
@@ -481,8 +482,5 @@ footer {
         color: rgb(126, 126, 129);
     }
 
-    #map {
-        width: 200px;
-    }
 
 }
