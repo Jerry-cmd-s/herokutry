@@ -10,18 +10,25 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-const PORT = 5501;
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`); // log the port number
-});
+
 
 
 const connection = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "Jerry20022004&",
-    database: "votingresult"
+    host: "myvotingdatabse.coispubgurww.us-east-1.rds.amazonaws.com",
+    user: "admin",
+    password: "Rachelle20022004$",
+    database: "myvotingdatabse"
 });
+
+//If i wanted to connect on to my local database
+//const connection = mysql.createConnection({
+//  host: "localhost",
+// user: "root",
+// password: "Jerry20022004&",
+// database: "votingresult"
+//});
+
+
 
 connection.connect((error) => {
     if (error)
@@ -30,7 +37,8 @@ connection.connect((error) => {
 
 
 
-    //console.log('succesfully connected')
+
+
     app.post('/form', (req, res) => {
         const email = req.body.email
         const age = req.body.age
@@ -40,7 +48,7 @@ connection.connect((error) => {
         const state = req.body.state
 
 
-        const sql = 'INSERT INTO user_infos (email, age,ethnicity,sex,party,state)VALUES (?,?,?,?,?,?)'
+        const sql = 'INSERT INTO votersdata (email, age,ethnicity,sex,party,state)VALUES (?,?,?,?,?,?)'
 
         connection.query(sql, [email, age, eth, sex, party, state], (error, results, fields) => {
             if (error) throw error
@@ -53,3 +61,7 @@ connection.connect((error) => {
 
 
 })
+
+
+
+
