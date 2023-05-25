@@ -1,8 +1,4 @@
 [build]
-functions="Functions"
 
-[[redirects]]
-  from = "/api/my-function"
-  to = "/.netlify/functions/my-function"
-  status = 200
-  force = true
+publish= "public/"
+functions="function/"
