@@ -6,6 +6,7 @@
     "netlify-lambda": "^2.0.16"
   },
   "scripts": {
-    "build": "npm run build"
+    "lambda-serve": "netlify-lambda serve function",
+    "lambda-build": "netlify-lambda build function"
   }
 }
