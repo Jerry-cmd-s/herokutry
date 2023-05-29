@@ -5,7 +5,7 @@ exports.handler = async (event) => {
         host: 'myvotingdatabse.coispubgurww.us-east-1.rds.amazonaws.com',
         user: 'admin',
         password: 'Rachelle20022004$',
-        database: 'myvotingdatabse',
+        database: 'votingdatas',
     });
 
     try {
