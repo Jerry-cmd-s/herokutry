@@ -13,7 +13,7 @@ exports.handler = async (event) => {
 
         const sql = 'INSERT INTO votersdata (email, age, ethnicity, sex, party, state) VALUES (?, ?, ?, ?, ?, ?)';
 
-        await connection.promise().execute(sql, [email, age, eth, sex, party, state]);
+        await connection.promise().execute(sql, [email, age, sex, eth, party, state]);
 
         return {
             statusCode: 200,
