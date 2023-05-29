@@ -36,6 +36,26 @@
 <header>
     <nav class="vote_nav">
 
+        <a href=" https://www.linkedin.com/in/jerry-cami-jean-baptiste-02b00b205/">
+            <img class="linkedinpic" src="linkedin.png" alt="linkedin">
+        </a>
+
+
+        <a href="https://www.instagram.com/spiolittle/">
+            <img class="instapic" src="insta.png" alt="instagram">
+
+        </a>
+        <a href="https://github.com/Jerry-cmd-s/herokutry">
+            <img class="gitlogo" src="github.jpeg" alt="github
+            ">
+
+        </a>
+
+
+
+
+
+
         <div class="container">
             <ul class="votenavcontents">
 
@@ -61,41 +81,11 @@
 </header>
 
 <body>
-    <a href=" https://www.linkedin.com/in/jerry-cami-jean-baptiste-02b00b205/">
-        <img class="linkedinpic" src="linkedin.png" alt="linkedin">
-    </a>
 
-
-    <a href="https://www.instagram.com/spiolittle/">
-        <img class="instapic" src="insta.png" alt="instagram">
-
-    </a>
-    <a href="https://github.com/Jerry-cmd-s/herokutry">
-        <img class="gitlogo" src="github.jpeg" alt="github
-        ">
-
-    </a>
     <div class="titlectd">
         <span>
-            <h2> Presidential Elections Date Countdown</h2>
+
         </span>
-    </div>
-    <div class="countdown">
-        <div class="days">
-            <p id="daysdis" class="bigtextdays">0</p> <span class="dhms">Days</span>
-        </div>
-        <div class="hours">
-            <p id="hoursdis" class="bigtexthours">0</p> <span class="dhms">Hours</span>
-        </div>
-        <div class="mins">
-            <p id="minsdis" class="bigtextmins">0</p> <span class="dhms">Minutes</span>
-        </div>
-        <div class="seconds">
-            <p id="secondsdis" class="bigtextsecond">0</p> <span class="dhms"> Seconds</span>
-        </div>
-
-
-
     </div>
 
     <div class="page_content">
@@ -104,28 +94,32 @@
 
         <div class="line">
 
-
-            <form style="  background-color:  rgba(2, 2, 0, 0.015); height: 610px; " id="form" action='/form'
-                method="post">
-
+            <form style="  background-color:  #cfd1d2a7; height: 610px; " id="form" action='/form' method="post">
 
 
                 <div class="sentencewlcomedesign">
 
-                    Online Voting Form
+
 
                 </div>
 
+                <input placeholder="Type existing email..." class="form-control form-control-solid" type="text"
+                    id="email" name="email">
 
 
-                <input placeholder="Email" class="select_design" type="text" id="email" name="email"><br><br>
+
+                <input type="date" class="form-control form-control-solid" placeholder="Birthdate" name="target_title"
+                    fdprocessedid="5uzazss">
+                <!-- <input placeholder="Email" class="select_design" type="text" id="email" name="email"><br><br> -->
 
 
 
-                <input placeholder="Enter your age" class="select_design" type="text" id="age" name="age"><br><br>
 
 
-                <select class="select_design" name="sex" id="sex">
+
+
+                <select class=" form-control form-control-solid ps-12 flatpickr-input active" name='sex'>
+                    id="sex">
                     <option value="" disabled selected> Select your sex</option>>
 
                     <option value="M">Male</option>
@@ -137,7 +131,7 @@
                 <p></p>
 
 
-                <select class="select_design" name="eth" id="eth">
+                <select class="form-control form-control-solid ps-12 flatpickr-input active" name="eth" id="eth">
                     <option value="" disabled selected> Select your ethnicity</option>
 
                     <option value="White">White</option>
@@ -156,8 +150,8 @@
 
 
 
-
-                <select class="select_design" name="party" id="party">
+                <select class=" form-control form-control-solid ps-12 flatpickr-input active dropdown" name="party"
+                    id="party">
                     <option value="" disabled selected>Select your Party</option>>
                     <option value="Democratic">Democratic</option>
                     <option value="Republican">Republican</option>
@@ -166,29 +160,34 @@
 
 
                 <p> </p>
-                <select class="select_design" name="state" id="st">
+                <select class="form-control form-control-solid ps-12 flatpickr-input active" name="state" id="st">
 
 
 
                 </select>
-                <button class="button" type="submit"> Submit </button>
 
-                <div class="checkbox">
-                    <input class="text" type="checkbox" required name="terms">
+                <button type="submit" class="button">Submit</button>
 
-                    I agree to the terms and conditions
+                </span>
+                <!-- <div class="checkbox"> -->
+                <!-- <input class="text" type="checkbox" required name="terms"> -->
 
-                    </label>
+                <input class="form-check-input" type="checkbox" value="1" checked="checked">
+                <label class="fs-6 fw-semibold">I agree to the terms and conditions</label>
+                <div class="fs-7 fw-semibold text-muted">If you need more info, please check budget planning</div>
 
 
-                </div>
+                </label>
 
-            </form>
+
         </div>
 
+        </form>
+    </div>
 
 
-        <div style="float: left;" id="dataContainer"> </div>
+
+    <div style="float: left;" id="dataContainer"> </div>
 
     </div>
 
@@ -196,15 +195,9 @@
 
     </div>
 
-    <input placeholder="Search your district..." class="mapsearchentry" id="pac-input" type="text" size="50">
-    <div id="map" style=" outline: auto;  width: 500px; height: 600px; margin: 10px auto;">
-        <center>
-            <h1 style="color: green;">Map coming up soon,it will allow you to look for your district </h1>
-        </center>
-    </div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeiKzISzDN80MEsDEpHacEMPhsWZZVRqg&libraries=places"
-        defer>
-        </script>
+
+
+    </script>
 
 
 
