@@ -11,7 +11,7 @@ exports.handler = async (event) => {
     try {
         const { email, age, sex, eth, party, state } = JSON.parse(event.body);
 
-        const sql = 'INSERT INTO votersdata (email, age, ethnicity, sex, party, state) VALUES (?, ?, ?, ?, ?, ?)';
+        const sql = 'INSERT INTO votersdata (email, age, sex, ethnicity, party, state) VALUES (?, ?, ?, ?, ?, ?)';
 
         await connection.promise().execute(sql, [email, age, sex, eth, party, state]);
 
