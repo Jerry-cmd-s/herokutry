@@ -3,5 +3,3 @@ command='npm run build'
 publish= 'public/'
 functions='function/'
 
-[dev]
-port = 3001
