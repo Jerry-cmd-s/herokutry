@@ -22,7 +22,7 @@ exports.handler = async (event) => {
     } catch (error) {
         return {
             statusCode: 500,
-            body: JSON.stringify({ error: 'Error inserting data' }),
+            body: JSON.stringify(error),
         };
     } finally {
         connection.end();

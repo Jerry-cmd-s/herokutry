@@ -529,7 +529,7 @@ form {
     margin: 0 auto;
     margin-top: 40px;
     float: right;
-
+    border-radius: 0.475rem;
 }
 
 
@@ -539,14 +539,14 @@ form {
     height: 45px;
     margin-top: 20px;
     padding-left: 4px;
-    font-size: 1.1rem;
-    font-weight: 500;
+    font-size: 1.05rem;
+    font-weight: 100;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     border-radius: 0.475rem;
     box-shadow: false;
     line-height: 1.5;
     border: 1px solid var(--bs-gray-300);
-
+    font-family: 'Times New Roman', Times, serif;
 
     background-clip: padding-box;
 
