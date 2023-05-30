@@ -19,6 +19,7 @@ body {
     width: 100%;
     box-sizing: border-box;
     height: 100%;
+    background-image: url('5638687.jpg');
 
 
 }
@@ -65,14 +66,7 @@ ul {
 
 
 
-.select_design {
-    width: 250px;
-    border-radius: 4px;
-    height: 35px;
-    margin-top: 20px;
-    padding-left: 4px;
 
-}
 
 .sentencewlcomedesign {
     background-image: linear-gradient(to top, rgb(27, 7, 244), rgb(169, 9, 9));
@@ -96,7 +90,7 @@ ul {
 
 
 .page_content {
-    width: 100%;
+    width: 50%;
     height: 700px;
     justify-content: center;
     align-items: center;
@@ -203,22 +197,7 @@ h2 {
 
 }
 
-form {
-    text-align: center;
-    width: 50%;
 
-    font-weight: bold;
-    color: black;
-    padding-top: 1rem;
-    padding-bottom: 3rem;
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 100%;
-    margin: 0 auto;
-    margin-top: 40px;
-    float: right;
-
-}
 
 .checkbox {
     box-sizing: border-box;
@@ -500,20 +479,18 @@ footer {
 
 .form-control {
     display: block;
-    width: 100%;
+
     padding: 0.775rem 1rem;
-    font-size: 1.1rem;
-    font-weight: 500;
-    line-height: 1.5;
-    color: var(--bs-gray-700);
-    background-color: var(--bs-body-bg);
-    background-clip: padding-box;
-    border: 1px solid var(--bs-gray-300);
-    appearance: none;
-    border-radius: 0.475rem;
-    box-shadow: false;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+
+
+
+    justify-content: center;
+
+
+
     margin-bottom: 20px;
+    padding-right: 10px;
 
 }
 
@@ -525,7 +502,7 @@ footer {
     border-color: #f9f9f9;
     color: #5e6278;
     transition: color 0.2s ease;
-
+    justify-content: center;
 }
 
 .flatpickr-input[readonly] {
@@ -536,19 +513,43 @@ footer {
     padding-left: 3rem !important;
 }
 
-.form-control {
-    display: block;
-    width: 100%;
-    padding: 0.775rem 1rem;
+
+
+form {
+    text-align: center;
+    width: 80%;
+    justify-content: center;
+    font-weight: bold;
+    color: black;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+    float: right;
+
+}
+
+
+.select_design {
+    width: 250px;
+    border-radius: none;
+    height: 45px;
+    margin-top: 20px;
+    padding-left: 4px;
     font-size: 1.1rem;
     font-weight: 500;
-    line-height: 1.5;
-    color: var(--bs-gray-700);
-    background-color: var(--bs-body-bg);
-    background-clip: padding-box;
-    border: 1px solid var(--bs-gray-300);
-    appearance: none;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     border-radius: 0.475rem;
     box-shadow: false;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    line-height: 1.5;
+    border: 1px solid var(--bs-gray-300);
+
+
+    background-clip: padding-box;
+
+
+    width: 100%;
 }
