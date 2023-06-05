@@ -9,20 +9,16 @@ exports.handler = async (event) => {
     });
 
     try {
-        const { email, age, sex, eth, party, state } = JSON.parse(event.body);
-
-        const sql = 'INSERT INTO votersdata (email, age, sex, ethnicity, party, state) VALUES (?, ?, ?, ?, ?, ?)';
-
-        await connection.promise().execute(sql, [email, age, sex, eth, party, state]);
+        await connection.connect();
 
         return {
             statusCode: 200,
-            body: JSON.stringify({ message: 'Data inserted successfully' }),
+            body: JSON.stringify({ message: 'Connected to the database' }),
         };
     } catch (error) {
         return {
             statusCode: 500,
-            body: JSON.stringify({ error: 'Error inserting data' }),
+            body: JSON.stringify({ error: 'Failed to connect to the database' }),
         };
     } finally {
         connection.end();
