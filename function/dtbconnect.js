@@ -2,10 +2,10 @@ const mysql = require('mysql2');
 
 exports.handler = async (event) => {
     const connection = mysql.createConnection({
-        host: 'myvotingdatabse.coispubgurww.us-east-1.rds.amazonaws.com',
-        user: 'admin',
-        password: 'Rachelle20022004$',
-        database: 'votingdatas',
+        host: 'sql112.epizy.com',
+        user: 'epiz_34350910',
+        password: 'yyS3X8sT3S',
+        database: 'epiz_34350910_h',
     });
 
     try {
