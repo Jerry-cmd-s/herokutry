@@ -2,14 +2,22 @@ const mysql = require('mysql2');
 
 exports.handler = async (event) => {
     const connection = mysql.createConnection({
-        host: 'ql112.epizy.com',
+        host: 'sql112.epizy.com',
         user: 'epiz_34350910',
         password: 'yyS3X8sT3S',
         database: 'epiz_34350910_h',
     });
 
     try {
-        await connection.connect();
+        await new Promise((resolve, reject) => {
+            connection.connect((err) => {
+                if (err) {
+                    reject(err);
+                } else {
+                    resolve();
+                }
+            });
+        });
 
         return {
             statusCode: 200,
