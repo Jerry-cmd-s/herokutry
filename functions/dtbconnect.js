@@ -5,7 +5,7 @@ exports.handler = async (event) => {
         host: 'elvish-cow-4060.g8z.cockroachlabs.cloud',
         user: 'jerrycami',
         password: 'tOMLDsvMX2Kile2fq4SpRQ',
-        database: 'clientdtb',
+        database: 'clientdb',
         port: '26257'
     });
 
