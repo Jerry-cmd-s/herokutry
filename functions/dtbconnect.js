@@ -2,10 +2,11 @@ const mysql = require('mysql2');
 
 exports.handler = async (event) => {
     const connection = mysql.createConnection({
-        host: 'sql112.epizy.com',
-        user: 'epiz_34350910',
-        password: 'yyS3X8sT3S',
-        database: 'epiz_34350910_h',
+        host: 'elvish-cow-4060.g8z.cockroachlabs.cloud',
+        user: 'jerrycami',
+        password: 'tOMLDsvMX2Kile2fq4SpRQ',
+        database: 'clientdtb',
+        port: '26257'
     });
 
     try {
