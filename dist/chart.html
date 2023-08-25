@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .chart {
+            width: 60%;
+            height: auto;
+            color: rgb(3, 4, 9);
+        }
+
+        .mySecondChart {
+            width: 60%;
+            height: auto;
+        }
+
+        .thirdchart {
+            width: 60%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+    <div class="chart">
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <p></p>
+    <div>
+        <canvas id="mySecondChart"></canvas>
+    </div>
+    <div class="thirdchart">
+        <canvas id="thirdchart"></canvas>
+    </div>
+
+
+    <script>
+
+
+        async function getData() {
+            try {
+                const response = await fetch('/getchartdata'); // Updated endpoint
+
+                //its using destructuring method to distribute the value to its own variable
+                const { whitecount, blackcount, spanishcount, femalecount, malecount, democratcount, republiccount } = await response.json();
+
+                console.log({ whitecount, blackcount, spanishcount, femalecount, malecount, democratcount, republiccount });
+                return { whitecount, blackcount, spanishcount, femalecount, malecount, democratcount, republiccount }
+            } catch (error) {
+                console.error("error fetching the data", error)
+                return null
+            }
+        }
+
+        getData().then(data => {
+
+            //==================================
+
+            const ctx = document.getElementById('myChart');
+            if (!ctx) {
+                console.error("Canvas element not found.");
+                return;
+            }
+
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Democrat', 'Republican'],
+                    datasets: [{
+                        label: '# of Votes based on Parties',
+                        data: [data.democratcount, data.republiccount],
+                        backgroundColor: [
+                            'rgba(54, 162, 235, 0.6)', // Blue color for Democrat
+                            'rgba(255, 99, 132, 0.6)', // Red color for Republican
+                        ],
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+
+
+
+            // Creating a second chart
+            const ctx2 = document.getElementById('mySecondChart');
+            if (!ctx2) {
+                console.error("Second canvas element not found.");
+                return;
+            }
+
+            new Chart(ctx2, {
+                type: 'bar',
+                data: {
+                    labels: ['Male', 'Female'],
+                    datasets: [{
+                        label: '# of Votes Based on Gender',
+                        data: [data.malecount, data.femalecount],
+                        backgroundColor: [
+                            'rgba(0, 128, 0, 0.6)', // Teal color for Male
+                            'rgba(255, 159, 64, 0.6)', // Orange color for Female
+                        ],
+                        borderWidth: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+            // Creating a third chart
+            const ctx3 = document.getElementById('thirdchart');
+            if (!ctx3) {
+                console.error("Second canvas element not found.");
+                return;
+            }
+
+            new Chart(ctx3, {
+                type: 'bar',
+                data: {
+                    labels: ['White', 'Black', 'Spanish'],
+                    datasets: [{
+                        label: '# of Votes Based on Ethnicity',
+                        data: [data.whitecount, data.blackcount, data.spanishcount],
+                        backgroundColor: [
+                            'rgba(255, 255, 255)', // Teal color for Male
+                            ' rgb(3, 4, 9)',
+                            'rgba(0, 128, 0, 0.6)', // Orange color for Female
+                        ],
+                        borderWidth: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }).catch((err) => {
+            console.error('Failed to create chart ')
+        })
+
+
+
+
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
