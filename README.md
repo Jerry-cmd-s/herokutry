@@ -1,4 +1,4 @@
-# Project Name
+# Voting Website
 
 [Project description and purpose]
 
